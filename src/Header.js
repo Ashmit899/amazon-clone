@@ -34,7 +34,7 @@ function Header() {
                     <NavLink to="/checkout">
                         <ShoppingBasketIcon />
                     </NavLink>
-                    <span className='header_optionLineTwo header_basketCount'>0</span>
+                    <span className='header_optionLineTwo header_basketCount'>{basket.length}</span>
                 </div>
             </div>
 
