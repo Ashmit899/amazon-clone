@@ -5,7 +5,7 @@ import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
 import {NavLink} from 'react-router-dom' ;
 import {useStateValue } from './StateProvider';
 
-function Header() { 
+function Header({cartCount}) { 
 
     const [{basket},dispatch] = useStateValue() ; 
     return (
@@ -34,7 +34,7 @@ function Header() {
                     <NavLink to="/checkout">
                         <ShoppingBasketIcon />
                     </NavLink>
-                    <span className='header_optionLineTwo header_basketCount'>{basket.length}</span>
+                    <span className='header_optionLineTwo header_basketCount'>{cartCount}</span>
                 </div>
             </div>
 
